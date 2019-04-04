@@ -9,3 +9,7 @@ improvements in generalization (here: about 4% on average), but cost much more t
 2. No Free Lunch theorem as I understand it
 
 If we have absolutely no knowledge or insights about the problem we intend to solve, which algorithm we choose doesn't matter.
+
+3. Bayes error rate
+
+In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/Bayes_error_rate) is the lowest possible error rate for any classifier of a random outcome (into, for example, one of two categories) and is analogous to the irreducible error.
