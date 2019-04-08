@@ -13,3 +13,9 @@ If we have absolutely no knowledge or insights about the problem we intend to so
 3. Bayes error rate
 
 In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/Bayes_error_rate) is the lowest possible error rate for any classifier of a random outcome (into, for example, one of two categories) and is analogous to the irreducible error.
+
+4. Common Dimension Reduction techniques
+
+(Reference: https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/)
+
+![Dimension Reduction](img/dimension_reduction.jpg)
