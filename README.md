@@ -18,5 +18,5 @@ In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/
 
 (Reference: https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/)
 
-![Dimension Reduction](img/dimension_reduction.jpg)
+![Dimension Reduction](image/dimension_reduction.jpg)
 
