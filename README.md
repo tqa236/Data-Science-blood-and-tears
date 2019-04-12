@@ -20,3 +20,16 @@ In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/
 
 ![Dimension Reduction](image/dimension_reduction.png)
 
+5. Use backslash escapes in f-strings
+
+(Reference: https://realpython.com/python-f-strings/)
+
+> As you saw earlier, it is possible for you to use backslash escapes in the string portion of an f-string. However, you can’t use backslashes to escape in the expression part of an f-string:
+
+```
+>>> f"{\"Hello World\"}"
+  File "<stdin>", line 1
+    f"{\"Hello World\"}"
+                      ^
+SyntaxError: f-string expression part cannot include a backslash
+```
