@@ -33,3 +33,12 @@ In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/
                       ^
 SyntaxError: f-string expression part cannot include a backslash
 ```
+
+6. Compare notebooks for version control
+
+Use [nbdime](https://nbdime.readthedocs.io/en/stable/#)
+
+```
+nbdiff notebook_1.ipynb notebook_2.ipynb
+nbdiff-web notebook_1.ipynb notebook_2.ipynb
+```
