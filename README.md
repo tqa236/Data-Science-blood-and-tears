@@ -42,3 +42,29 @@ Use [nbdime](https://nbdime.readthedocs.io/en/stable/#)
 nbdiff notebook_1.ipynb notebook_2.ipynb
 nbdiff-web notebook_1.ipynb notebook_2.ipynb
 ```
+
+7. Docker related problems
+
+* Cannot open localhost
+
+```
+docker run -it -p 8888:8888 image:version
+```
+
+* Kill all running containers
+
+```
+docker kill $(docker ps -q)
+```
+
+* Delete all stopped containers
+
+```
+docker rm $(docker ps -a -q)
+```
+
+* Delete all images
+
+```
+docker rmi $(docker images -q)
+```
