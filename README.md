@@ -45,6 +45,12 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 
 7. Docker related problems
 
+* Fix Docker error: request canceled while waiting for connection 
+
+(Source: https://github.com/docker/kitematic/issues/2956)
+
+Go to Docker settings > network > DNS server . change from automaic to fixed ( default is 8.8.8.8 )
+
 * Cannot open localhost
 
 ```
@@ -67,4 +73,18 @@ docker rm $(docker ps -a -q)
 
 ```
 docker rmi $(docker images -q)
+```
+
+8. Jupyter notebook tools
+
+* facets: Data visualization
+* papermill: Parameter settings
+* nbconvert: convert notebooks to other formats
+
+9. Close multiple Chrome windows with PowerShell
+
+(Source: https://www.reddit.com/r/PowerShell/comments/5feoyx/one_liner_to_kill_chrome/)
+
+```
+Stop-Process -Name chrome
 ```
