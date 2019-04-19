@@ -75,6 +75,12 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 ```
 
+* Mount a host directory to a container (Windows)
+
+```
+docker run -v d:/data:/data alpine ls /data
+```
+
 8. Jupyter notebook tools
 
 * facets: Data visualization
