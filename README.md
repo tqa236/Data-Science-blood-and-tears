@@ -84,7 +84,16 @@ docker run -v d:/data:/data alpine ls /data
 * Access to a container's terminal
 
 ```
-docker exec -i -t container_name /bin/bash
+docker exec -it container_name /bin/bash
+docker exec -it -u root container_name /bin/bash
+
+```
+
+* Install ping in Docker
+
+```
+apt update
+apt install iputils-ping
 ```
 
 8. Jupyter notebook tools
