@@ -81,6 +81,12 @@ docker rmi $(docker images -q)
 docker run -v d:/data:/data alpine ls /data
 ```
 
+* Access to a container's terminal
+
+```
+docker exec -i -t container_name /bin/bash
+```
+
 8. Jupyter notebook tools
 
 * facets: Data visualization
