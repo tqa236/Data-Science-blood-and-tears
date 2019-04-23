@@ -96,6 +96,12 @@ apt update
 apt install iputils-ping
 ```
 
+* Check Ubuntu version inside a Docker container
+
+```
+cat /etc/lsb-release
+```
+
 8. Jupyter notebook tools
 
 * facets: Data visualization
