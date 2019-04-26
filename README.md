@@ -56,3 +56,10 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 ```
 Stop-Process -Name chrome
 ```
+
+9. svn related problem
+
+* Add all untracked files
+```
+svn add --force * --auto-props --parents --depth infinity -q
+```
