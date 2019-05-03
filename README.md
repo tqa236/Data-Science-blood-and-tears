@@ -63,3 +63,9 @@ Stop-Process -Name chrome
 ```
 svn add --force * --auto-props --parents --depth infinity -q
 ```
+
+10. Tukey test
+
+(Source: https://www.statisticshowto.datasciencecentral.com/tukey-test-honest-significant-difference/)
+
+> The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.
