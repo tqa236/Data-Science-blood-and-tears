@@ -59,10 +59,11 @@ Stop-Process -Name chrome
 
 9. svn related problem
 
-* Add all untracked files
+(Source: https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn)
+
+* Add all unversioned files (Warning: This solution also adds all ignore files)
 ```
-svn add --force * --auto-props --parents --depth infinity -q
-```
+svn --force add .```
 
 10. Tukey test
 
