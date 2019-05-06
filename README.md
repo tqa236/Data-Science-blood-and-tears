@@ -63,7 +63,8 @@ Stop-Process -Name chrome
 
 * Add all unversioned files (Warning: This solution also adds all ignore files)
 ```
-svn --force add .```
+svn --force add .
+```
 
 10. Tukey test
 
