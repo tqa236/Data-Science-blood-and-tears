@@ -85,8 +85,11 @@ WHERE c.name LIKE '%MyCol%';
 
 12. Time series - ARMA model
 
+(Source: https://www.datacamp.com/courses/arima-modeling-with-r)
+
 You should always examine the residuals because the model assumes the errors are Gaussian white noise.
 Test for white noise with `astsa` package in R
+
 ```
 # Generate 100 observations from the AR(1) model
 x <- arima.sim(model = list(order = c(1, 0, 0), ar = .9), n = 100) 
@@ -100,3 +103,9 @@ plot(acf2(x))
 # Fit an AR(1) to the data and examine the t-table
 sarima(x, p = 1, d = 0, q = 0)
 ```
+
+Bad residuals
+* Pattern in the residuals
+* ACF has large values
+* Q-Q plot suggests normality
+* Q-statistics - all points below line
