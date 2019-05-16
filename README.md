@@ -82,3 +82,7 @@ FROM sys.columns c
     JOIN sys.tables t ON c.object_id = t.object_id
 WHERE c.name LIKE '%MyCol%';
 ```
+
+12. Time series - ARMA model
+
+You should always examine the residuals because the model assumes the errors are Gaussian white noise.
