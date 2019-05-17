@@ -109,3 +109,7 @@ Bad residuals
 * ACF has large values
 * Q-Q plot suggests normality
 * Q-statistics - all points below line
+
+13. Various kinds of transformation for categorical variables
+
+(Source: http://contrib.scikit-learn.org/categorical-encoding/index.html)
