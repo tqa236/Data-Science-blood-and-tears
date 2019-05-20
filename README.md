@@ -119,3 +119,24 @@ Bad residuals
 (Source: https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
 
 Halfway solution: use the `%load` magic of IPython
+
+15. Autoreload submodule in Jupyter Notebook
+
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+16. Use joblib for caching output
+
+(Source: https://hackernoon.com/10-tips-on-using-jupyter-notebook-abc0ba7028a4)
+
+It's faster to cache repeated result with joblib
+
+```
+from sklearn.externals.joblib import Memory
+memory = Memory(cachedir='/tmp', verbose=0)
+@memory.cache
+def computation(p1, p2):
+    ...
+```
