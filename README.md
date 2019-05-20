@@ -113,3 +113,9 @@ Bad residuals
 13. Various kinds of transformation for categorical variables
 
 (Source: http://contrib.scikit-learn.org/categorical-encoding/index.html)
+
+14. Template to import libraries in Jupyter Notebook
+
+(Source: https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
+
+Halfway solution: use the `%load` magic of IPython
