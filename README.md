@@ -72,7 +72,9 @@ svn --force add .
 
 > The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.
 
-11. Search for column name in SQL
+11. SQL tips and tricks
+
+* Search for column name
 
 (Source: https://stackoverflow.com/questions/26293085/find-all-table-names-with-column-name)
 
@@ -82,6 +84,16 @@ FROM sys.columns c
     JOIN sys.tables t ON c.object_id = t.object_id
 WHERE c.name LIKE '%MyCol%';
 ```
+
+* Declare a variable
+
+```
+DECLARE @my_var int = 10;
+```
+
+* Calculate a column using a calculated column
+
+Not possible, recalculate.
 
 12. Time series - ARMA model
 
