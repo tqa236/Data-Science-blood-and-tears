@@ -103,6 +103,9 @@ Use `UTF-16` encoding, not `utf-8`
 query = open(filepath, 'r',  encoding="UTF-16")
 ```
 
+* Parameterized query
+
+(Source: https://stackoverflow.com/questions/43491381/pyodbc-the-sql-contains-0-parameter-markers-but-1-parameters-were-supplied-hy0)
 
 12. Time series - ARMA model
 
