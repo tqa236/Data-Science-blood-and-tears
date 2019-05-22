@@ -95,6 +95,15 @@ DECLARE @my_var int = 10;
 
 Not possible, recalculate.
 
+* Read SQL script from file on Windows
+
+Use `UTF-16` encoding, not `utf-8`
+
+```
+query = open(filepath, 'r',  encoding="UTF-16")
+```
+
+
 12. Time series - ARMA model
 
 (Source: https://www.datacamp.com/courses/arima-modeling-with-r)
