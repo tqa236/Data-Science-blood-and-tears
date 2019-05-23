@@ -164,3 +164,7 @@ memory = Memory(cachedir='/tmp', verbose=0)
 def computation(p1, p2):
     ...
 ```
+
+17. Delete files in svn
+
+Cannot delete manually, must use `svn rm path/to/file`
