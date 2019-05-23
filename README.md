@@ -165,6 +165,16 @@ def computation(p1, p2):
     ...
 ```
 
-17. Delete files in svn
+17. SVN on Windows tips and tricks
+
+* Delete files
 
 Cannot delete manually, must use `svn rm path/to/file`
+
+* Remove manually deleted files
+
+(Source: https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)
+
+```ps
+svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
+```
