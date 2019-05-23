@@ -12,6 +12,9 @@ Go to Docker settings > network > DNS server . change from automaic to fixed ( d
 docker run -it -p 8888:8888 image:version
 ```
 
+First port: external port.
+Second port: internal port.
+
 * Kill all running containers
 
 ```
