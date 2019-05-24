@@ -147,13 +147,14 @@ def computation(p1, p2):
 
 * Interactive table
 
-** [Use DataTable](https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
+    * [Use DataTable](https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
 
-** Use [`qgrid`](https://github.com/quantopian/qgrid)
+    * Use [`qgrid`](https://github.com/quantopian/qgrid)
 
 ```python
 import qgrid
-qgrid_widget = qgrid.show_grid(df, show_toolbar=True)
+# Adjust column width with grid_options
+qgrid_widget = qgrid.show_grid(df, show_toolbar=True, grid_options={'forceFitColumns': False, 'defaultColumnWidth': 200})
 qgrid_widget
 ```
 
