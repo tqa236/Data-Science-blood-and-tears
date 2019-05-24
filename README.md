@@ -138,20 +138,22 @@ Bad residuals
 
 (Source: http://contrib.scikit-learn.org/categorical-encoding/index.html)
 
-14. Template to import libraries in Jupyter Notebook
+14. Jupyter Notebook tips and tricks
+
+* Template to import libraries in Jupyter Notebook
 
 (Source: https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
 
 Halfway solution: use the `%load` magic of IPython
 
-15. Autoreload submodule in Jupyter Notebook
+* Autoreload submodule in Jupyter Notebook
 
 ```
 %load_ext autoreload
 %autoreload 2
 ```
 
-16. Use joblib for caching output
+* Use joblib for caching output
 
 (Source: https://hackernoon.com/10-tips-on-using-jupyter-notebook-abc0ba7028a4)
 
@@ -165,7 +167,11 @@ def computation(p1, p2):
     ...
 ```
 
-17. SVN on Windows tips and tricks
+* Interactive table
+
+(Source: https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
+
+15. SVN on Windows tips and tricks
 
 * Delete files
 
