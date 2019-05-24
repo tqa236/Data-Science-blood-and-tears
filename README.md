@@ -178,3 +178,5 @@ Cannot delete manually, must use `svn rm path/to/file`
 ```ps
 svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 ```
+
+* After ignoring files, must commit for it to work.
