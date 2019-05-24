@@ -14,15 +14,11 @@ If we have absolutely no knowledge or insights about the problem we intend to so
 
 In statistical classification, [Bayes error rate](https://en.wikipedia.org/wiki/Bayes_error_rate) is the lowest possible error rate for any classifier of a random outcome (into, for example, one of two categories) and is analogous to the irreducible error.
 
-4. Common Dimension Reduction techniques
-
-(Reference: https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/)
+4. [Common Dimension Reduction techniques](https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/)
 
 ![Dimension Reduction](image/dimension_reduction.png)
 
-5. Use backslash escapes in f-strings
-
-(Reference: https://realpython.com/python-f-strings/)
+5. [Use backslash escapes in f-strings](https://realpython.com/python-f-strings/)
 
 > As you saw earlier, it is possible for you to use backslash escapes in the string portion of an f-string. However, you can’t use backslashes to escape in the expression part of an f-string:
 
@@ -49,9 +45,7 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 * papermill: Parameter settings
 * nbconvert: convert notebooks to other formats
 
-8. Close multiple Chrome windows with PowerShell
-
-(Source: https://www.reddit.com/r/PowerShell/comments/5feoyx/one_liner_to_kill_chrome/)
+8. [Close multiple Chrome windows with PowerShell](https://www.reddit.com/r/PowerShell/comments/5feoyx/one_liner_to_kill_chrome/)
 
 ```
 Stop-Process -Name chrome
@@ -59,24 +53,18 @@ Stop-Process -Name chrome
 
 9. svn related problem
 
-(Source: https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn)
-
-* Add all unversioned files (Warning: This solution also adds all ignore files)
+* [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
 ```
 svn --force add .
 ```
 
-10. Tukey test
-
-(Source: https://www.statisticshowto.datasciencecentral.com/tukey-test-honest-significant-difference/)
+10. [Tukey test](https://www.statisticshowto.datasciencecentral.com/tukey-test-honest-significant-difference/)
 
 > The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.
 
 11. SQL tips and tricks
 
-* Search for column name
-
-(Source: https://stackoverflow.com/questions/26293085/find-all-table-names-with-column-name)
+* [Search for column name](https://stackoverflow.com/questions/26293085/find-all-table-names-with-column-name)
 
 ```
 SELECT c.name AS ColName, t.name AS TableName
@@ -103,13 +91,9 @@ Use `UTF-16` encoding, not `utf-8`
 query = open(filepath, 'r',  encoding="UTF-16")
 ```
 
-* Parameterized query
+* [Parameterized query](https://stackoverflow.com/questions/43491381/pyodbc-the-sql-contains-0-parameter-markers-but-1-parameters-were-supplied-hy0)
 
-(Source: https://stackoverflow.com/questions/43491381/pyodbc-the-sql-contains-0-parameter-markers-but-1-parameters-were-supplied-hy0)
-
-12. Time series - ARMA model
-
-(Source: https://www.datacamp.com/courses/arima-modeling-with-r)
+12. [Time series - ARMA model](https://www.datacamp.com/courses/arima-modeling-with-r)
 
 You should always examine the residuals because the model assumes the errors are Gaussian white noise.
 Test for white noise with `astsa` package in R
@@ -134,15 +118,11 @@ Bad residuals
 * Q-Q plot suggests normality
 * Q-statistics - all points below line
 
-13. Various kinds of transformation for categorical variables
-
-(Source: http://contrib.scikit-learn.org/categorical-encoding/index.html)
+13. [Various kinds of transformation for categorical variables](http://contrib.scikit-learn.org/categorical-encoding/index.html)
 
 14. Jupyter Notebook tips and tricks
 
-* Template to import libraries in Jupyter Notebook
-
-(Source: https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
+* [Template to import libraries in Jupyter Notebook](https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
 
 Halfway solution: use the `%load` magic of IPython
 
@@ -153,9 +133,7 @@ Halfway solution: use the `%load` magic of IPython
 %autoreload 2
 ```
 
-* Use joblib for caching output
-
-(Source: https://hackernoon.com/10-tips-on-using-jupyter-notebook-abc0ba7028a4)
+* [Use joblib for caching output](https://hackernoon.com/10-tips-on-using-jupyter-notebook-abc0ba7028a4)
 
 It's faster to cache repeated result with joblib
 
@@ -169,9 +147,7 @@ def computation(p1, p2):
 
 * Interactive table
 
-** Use DataTable
-
-(Source: https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
+** [Use DataTable](https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
 
 ** Use [`qgrid`](https://github.com/quantopian/qgrid)
 
@@ -188,9 +164,7 @@ qgrid_widget
 
 Cannot delete manually, must use `svn rm path/to/file`
 
-* Remove manually deleted files
-
-(Source: https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)
+* [Remove manually deleted files](https://stackoverflow.com/questions/9600382/svn-command-to-delete-all-locally-missing-files)
 
 ```ps
 svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
