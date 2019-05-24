@@ -169,7 +169,18 @@ def computation(p1, p2):
 
 * Interactive table
 
+** Use DataTable
+
 (Source: https://medium.com/@marekermk/guide-to-interactive-pandas-dataframe-representation-485acae02946)
+
+** Use [`qgrid`](https://github.com/quantopian/qgrid)
+
+```python
+import qgrid
+qgrid_widget = qgrid.show_grid(df, show_toolbar=True)
+qgrid_widget
+```
+
 
 15. SVN on Windows tips and tricks
 
