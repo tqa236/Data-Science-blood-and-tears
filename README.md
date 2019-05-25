@@ -172,3 +172,7 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 ```
 
 * After ignoring files, must commit for it to work.
+
+16. Python tips and tricks
+
+* Use [pytest `-s` flag](https://stackoverflow.com/questions/24617397/how-to-print-to-console-in-pytest) to print the statement to the console
