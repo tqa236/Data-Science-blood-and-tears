@@ -158,6 +158,7 @@ qgrid_widget = qgrid.show_grid(df, show_toolbar=True, grid_options={'forceFitCol
 qgrid_widget
 ```
 
+        * Sometimes `qgrid.show_grid` does not work. One solution is to close and open notebooks once for `qgrid` to work. Not sure why yet. Can't reproduce on an isolated environment.
 
 15. SVN on Windows tips and tricks
 
