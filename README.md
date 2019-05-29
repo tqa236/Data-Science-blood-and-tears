@@ -181,3 +181,7 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 17. Financial data
 
 *  We need to back-adjust all historical data for an instrument when there is a new split or dividend.
+
+18. Cross Validation is used for [model comparison](https://stats.stackexchange.com/questions/52274/how-to-choose-a-predictive-model-after-k-fold-cross-validation), not model building
+
+After we pick the suitable, we retrain with all the data and use that model for production.
