@@ -180,6 +180,14 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 
 *  We need to back-adjust all historical data for an instrument when there is a new split or dividend.
 
-18. Cross Validation is used for [model comparison](https://stats.stackexchange.com/questions/52274/how-to-choose-a-predictive-model-after-k-fold-cross-validation), not model building
+17. Cross Validation is used for [model comparison](https://stats.stackexchange.com/questions/52274/how-to-choose-a-predictive-model-after-k-fold-cross-validation), not model building
 
 After we pick the suitable, we retrain with all the data and use that model for production.
+
+18. Travis CI tips and tricks
+
+* lint a travis.yml file
+
+```console
+travis lint [path to your .travis.yml]
+```
