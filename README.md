@@ -176,6 +176,8 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 
 * Use [pytest `-s` flag](https://stackoverflow.com/questions/24617397/how-to-print-to-console-in-pytest) to print the statement to the console
 
+* Use [MonkeyType](https://github.com/Instagram/MonkeyType) to automatically add type hint to legacy code.
+
 16. Financial data
 
 *  We need to back-adjust all historical data for an instrument when there is a new split or dividend.
