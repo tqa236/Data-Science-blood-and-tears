@@ -57,11 +57,6 @@ Stop-Process -Name chrome
 
 10. SQL tips and tricks
 
-* [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
-```
-svn --force add .
-```
-
 * [Search for column name](https://stackoverflow.com/questions/26293085/find-all-table-names-with-column-name)
 
 ```
@@ -159,6 +154,11 @@ qgrid_widget
         * Sometimes `qgrid.show_grid` does not work. One solution is to close and open notebooks once for `qgrid` to work. Not sure why yet. Can't reproduce on an isolated environment.
 
 14. SVN on Windows tips and tricks
+
+* [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
+```
+svn --force add .
+```
 
 * Delete files
 
