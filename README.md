@@ -51,18 +51,16 @@ nbdiff-web notebook_1.ipynb notebook_2.ipynb
 Stop-Process -Name chrome
 ```
 
-9. svn related problem
+9. [Tukey test](https://www.statisticshowto.datasciencecentral.com/tukey-test-honest-significant-difference/)
+
+> The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.
+
+10. SQL tips and tricks
 
 * [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
 ```
 svn --force add .
 ```
-
-10. [Tukey test](https://www.statisticshowto.datasciencecentral.com/tukey-test-honest-significant-difference/)
-
-> The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.
-
-11. SQL tips and tricks
 
 * [Search for column name](https://stackoverflow.com/questions/26293085/find-all-table-names-with-column-name)
 
@@ -93,7 +91,7 @@ query = open(filepath, 'r',  encoding="UTF-16")
 
 * [Parameterized query](https://stackoverflow.com/questions/43491381/pyodbc-the-sql-contains-0-parameter-markers-but-1-parameters-were-supplied-hy0)
 
-12. [Time series - ARMA model](https://www.datacamp.com/courses/arima-modeling-with-r)
+11. [Time series - ARMA model](https://www.datacamp.com/courses/arima-modeling-with-r)
 
 You should always examine the residuals because the model assumes the errors are Gaussian white noise.
 Test for white noise with `astsa` package in R
@@ -118,9 +116,9 @@ Bad residuals
 * Q-Q plot suggests normality
 * Q-statistics - all points below line
 
-13. [Various kinds of transformation for categorical variables](http://contrib.scikit-learn.org/categorical-encoding/index.html)
+12. [Various kinds of transformation for categorical variables](http://contrib.scikit-learn.org/categorical-encoding/index.html)
 
-14. Jupyter Notebook tips and tricks
+13. Jupyter Notebook tips and tricks
 
 * [Template to import libraries in Jupyter Notebook](https://stackoverflow.com/questions/36194865/configure-a-first-cell-by-default-in-jupyter-notebooks)
 
@@ -160,7 +158,7 @@ qgrid_widget
 
         * Sometimes `qgrid.show_grid` does not work. One solution is to close and open notebooks once for `qgrid` to work. Not sure why yet. Can't reproduce on an isolated environment.
 
-15. SVN on Windows tips and tricks
+14. SVN on Windows tips and tricks
 
 * Delete files
 
@@ -174,11 +172,11 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 
 * After ignoring files, must commit for it to work.
 
-16. Python tips and tricks
+15. Python tips and tricks
 
 * Use [pytest `-s` flag](https://stackoverflow.com/questions/24617397/how-to-print-to-console-in-pytest) to print the statement to the console
 
-17. Financial data
+16. Financial data
 
 *  We need to back-adjust all historical data for an instrument when there is a new split or dividend.
 
