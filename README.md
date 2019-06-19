@@ -182,6 +182,12 @@ svn status | ? { $_ -match '^!\s+(.*)' } | % { svn rm $Matches[1] }
 
 * Use [MonkeyType](https://github.com/Instagram/MonkeyType) to automatically add type hint to legacy code.
 
+* [Suppress LightGBM Warning](https://github.com/Microsoft/LightGBM/issues/1157)
+
+For `sklearn` interface, set `verbose=-1` when defining the model (not in fit).
+
+For `lgb.train` interface, you can set `verbose=-1` in param dict.
+
 16. Financial data
 
 *  We need to back-adjust all historical data for an instrument when there is a new split or dividend.
