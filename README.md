@@ -86,6 +86,10 @@ query = open(filepath, 'r',  encoding="UTF-16")
 
 * [Parameterized query](https://stackoverflow.com/questions/43491381/pyodbc-the-sql-contains-0-parameter-markers-but-1-parameters-were-supplied-hy0)
 
+* [create function must be the only statement in the batch](https://stackoverflow.com/questions/25002881/create-function-must-be-the-only-statement-in-the-batch) error
+
+Add `GO` at the end of the function.
+
 11. [Time series - ARMA model](https://www.datacamp.com/courses/arima-modeling-with-r)
 
 You should always examine the residuals because the model assumes the errors are Gaussian white noise.
