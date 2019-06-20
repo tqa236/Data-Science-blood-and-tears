@@ -65,5 +65,5 @@ cat /etc/lsb-release
 * [Delete all containers of a specific image](https://stackoverflow.com/questions/32073971/stopping-docker-containers-by-image-name-ubuntu)
 
 ```
-docker rm $(docker stop $(docker ps -a -q --filter ancestor=<image-name> --format="{{.ID}}"))
+docker rm $(docker stop $(docker ps -a -q --filter ancestor=<image-name>))
 ```
