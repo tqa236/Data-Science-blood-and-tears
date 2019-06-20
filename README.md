@@ -207,10 +207,11 @@ travis lint [path to your .travis.yml]
 19. Python toolbox
 
 * Web Scrapping: BeautifulSoup
-* Data Visualization: seaborn, matplotlib, facets
+* Data Visualization: seaborn, matplotlib, facets, qgrid
 * Feature Engineering: category_encoders
 * Classical Machine Learning modelling: scikit-learn, LightGBM, CatBoost, XGBoost 
 * Deep Learning modelling: Keras, Tensorflow, Pytorch
+* Clustering: hdbscan
 * Autoformat and linting: pylint, pycodestyle, pydocstyle
 * Database: pyodbc
 * Dimension Reduction: Factor Analysis, Principal Component Analysis, Independent Component Analysis, t-SNE (scikit-learn), UMAP
