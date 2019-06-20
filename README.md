@@ -203,3 +203,15 @@ After we pick the suitable, we retrain with all the data and use that model for 
 ```console
 travis lint [path to your .travis.yml]
 ```
+
+19. Python toolbox
+
+* Web Scrapping: BeautifulSoup
+* Data Visualization: seaborn, matplotlib, facets
+* Feature Engineering: category_encoders
+* Classical Machine Learning modelling: scikit-learn, LightGBM, CatBoost, XGBoost 
+* Deep Learning modelling: Keras, Tensorflow, Pytorch
+* Autoformat and linting: pylint, pycodestyle, pydocstyle
+* Database: pyodbc
+* Dimension Reduction: Factor Analysis, Principal Component Analysis, Independent Component Analysis, t-SNE (scikit-learn), UMAP
+* Reporting: papermill, scrapbook
