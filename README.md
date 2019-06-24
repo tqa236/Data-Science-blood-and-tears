@@ -167,6 +167,14 @@ pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 ```
 
+* [Printing all the outputs of a cell](https://towardsdatascience.com/10-simple-hacks-to-speed-up-your-data-analysis-in-python-ec18c6396e6b)
+
+```python
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+```
+
 14. SVN on Windows tips and tricks
 
 * [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
