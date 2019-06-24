@@ -157,6 +157,16 @@ qgrid_widget
 
         * Sometimes `qgrid.show_grid` does not work. One solution is to close and open notebooks once for `qgrid` to work. Not sure why yet. Can't reproduce on an isolated environment.
 
+* [Display all columns with pandas](https://stackoverflow.com/questions/11707586/how-do-i-expand-the-output-display-to-see-more-columns)
+
+Some related settings:
+
+```python
+pd.set_option('display.max_rows', 500)
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.width', 1000)
+```
+
 14. SVN on Windows tips and tricks
 
 * [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
