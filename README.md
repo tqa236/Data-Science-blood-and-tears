@@ -177,7 +177,7 @@ InteractiveShell.ast_node_interactivity = "all"
 
 14. SVN on Windows tips and tricks
 
-* [Add all unversioned files](https://stackoverflow.com/questions/1598968/add-all-unversioned-files-to-svn) (Warning: This solution also adds all ignore files)
+* [Add all unversioned files](https://stackoverflow.com/questions/1071857/how-do-i-svn-add-all-unversioned-files-to-svn) (This solution do not add ignored files)
 ```
 svn --force add .
 ```
