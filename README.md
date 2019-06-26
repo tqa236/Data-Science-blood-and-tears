@@ -90,6 +90,8 @@ query = open(filepath, 'r',  encoding="UTF-16")
 
 Add `GO` at the end of the function.
 
+* Cannot save a sql file directly from a text file, must do that from MSSS (for now)
+
 11. [Time series - ARMA model](https://www.datacamp.com/courses/arima-modeling-with-r)
 
 You should always examine the residuals because the model assumes the errors are Gaussian white noise.
