@@ -67,3 +67,7 @@ cat /etc/lsb-release
 ```
 docker rm $(docker stop $(docker ps -a -q --filter ancestor=<image-name>))
 ```
+
+* [Mounted volume is empty inside container after changing Windows password](https://stackoverflow.com/questions/38583900/mounted-volume-is-empty-inside-container)
+
+We need to disable drive sharing (and click "Apply") and re-enable it again (and click "Apply").
