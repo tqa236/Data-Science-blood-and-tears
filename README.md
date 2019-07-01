@@ -236,3 +236,7 @@ travis lint [path to your .travis.yml]
 * Database: pyodbc
 * Dimension Reduction: Factor Analysis, Principal Component Analysis, Independent Component Analysis, t-SNE (scikit-learn), UMAP
 * Reporting: papermill, scrapbook
+
+20. [Panel data](https://en.wikipedia.org/wiki/Panel_data)
+
+In statistics and econometrics, panel data or longitudinal data are multi-dimensional data involving measurements over time.
