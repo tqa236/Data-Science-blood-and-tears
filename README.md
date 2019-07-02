@@ -240,3 +240,14 @@ travis lint [path to your .travis.yml]
 20. [Panel data](https://en.wikipedia.org/wiki/Panel_data)
 
 In statistics and econometrics, panel data or longitudinal data are multi-dimensional data involving measurements over time.
+
+21. R tips and tricks
+
+* [Connect to an SQL database](https://stackoverflow.com/questions/49652986/import-dataframe-from-sql-server-into-r)
+
+```r
+library(RODBC)
+dbhandle <- odbcDriverConnect('driver={SQL 
+Server};server=mysqlhost;database=mydbname;trusted_connection=true')
+res <- sqlQuery(dbhandle, 'select * from information_schema.tables')
+```
