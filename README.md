@@ -259,3 +259,8 @@ res <- sqlQuery(dbhandle, 'select * from information_schema.tables')
 > * The Wald test assumes that the likelihood is normally distributed, and on that basis, uses the degree of curvature to estimate the standard error. Then, the parameter estimate divided by the SE yields a z-score. This holds under large N, but isn't quite true with smaller Ns. It is hard to say when your N is large enough for this property to hold, so this test can be slightly risky.
 > * Likelihood ratio tests look at the ratio of the likelihoods (or difference in log likelihoods) at its maximum and at the null. This is often considered the best test.
 > * The score test is based on the slope of the likelihood at the null value. This is typically less powerful, but there are times when the full likelihood cannot be computed and so this is a nice fallback option.
+
+23. Trading algorithm testing
+
+* White Reallity Check test
+* Hansen Superior Predictive Ability test
