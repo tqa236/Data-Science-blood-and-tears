@@ -71,3 +71,5 @@ docker rm $(docker stop $(docker ps -a -q --filter ancestor=<image-name>))
 * [Mounted volume is empty inside container after changing Windows password](https://stackoverflow.com/questions/38583900/mounted-volume-is-empty-inside-container)
 
 We need to disable drive sharing (and click "Apply") and re-enable it again (and click "Apply").
+
+* Sometimes (when?), it's necessary to [increase the resources allocating to Docker](https://stackoverflow.com/questions/44907444/error-137-on-docker-build-command-on-win7)
