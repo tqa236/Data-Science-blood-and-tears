@@ -73,3 +73,6 @@ docker rm $(docker stop $(docker ps -a -q --filter ancestor=<image-name>))
 We need to disable drive sharing (and click "Apply") and re-enable it again (and click "Apply").
 
 * Sometimes (when?), it's necessary to [increase the resources allocating to Docker](https://stackoverflow.com/questions/44907444/error-137-on-docker-build-command-on-win7)
+
+* Use bind mount for local development and COPY in production
+(https://hackernoon.com/how-to-move-code-into-a-docker-container-ab28edcc2901)
