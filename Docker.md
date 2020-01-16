@@ -76,3 +76,7 @@ We need to disable drive sharing (and click "Apply") and re-enable it again (and
 
 * Use bind mount for local development and COPY in production
 (https://hackernoon.com/how-to-move-code-into-a-docker-container-ab28edcc2901)
+
+* [Container Structure Tests](https://github.com/GoogleContainerTools/container-structure-test)
+
+Must put `schemaVersion:       "2.0.0"` in the beginning of a test file.
