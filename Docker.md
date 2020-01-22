@@ -80,3 +80,5 @@ We need to disable drive sharing (and click "Apply") and re-enable it again (and
 * [Container Structure Tests](https://github.com/GoogleContainerTools/container-structure-test)
 
 Must put `schemaVersion:       "2.0.0"` in the beginning of a test file.
+
+* [Set up Docker with GPU](http://collabnix.com/introducing-new-docker-cli-api-support-for-nvidia-gpus-under-docker-engine-19-03-0-beta-release/)
