@@ -82,3 +82,17 @@ We need to disable drive sharing (and click "Apply") and re-enable it again (and
 Must put `schemaVersion:       "2.0.0"` in the beginning of a test file.
 
 * [Set up Docker with GPU](http://collabnix.com/introducing-new-docker-cli-api-support-for-nvidia-gpus-under-docker-engine-19-03-0-beta-release/)
+
+* [Connect to jupyter notebook running in docker in a remote server](https://stackoverflow.com/questions/54572456/connect-to-jupyter-notebook-running-in-docker-on-a-remote-server)
+
+In the remote machine:
+
+```
+docker run -it -p 8080:8888 -p 6006:6006 -v ~/:/host waleedka/modern-deep-learning
+```
+
+In the local machine:
+
+```
+ssh -N -L localhost:8000:localhost:8080 username@remoteHostIp
+```
