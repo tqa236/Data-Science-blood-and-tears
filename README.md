@@ -264,3 +264,7 @@ res <- sqlQuery(dbhandle, 'select * from information_schema.tables')
 
 * White Reallity Check test
 * Hansen Superior Predictive Ability test
+
+24. Update Python syntax to a newer version
+
+Use [`flynt`](https://github.com/ikamensh/flynt) or [`pyupgrade`](https://github.com/asottile/pyupgrade)
