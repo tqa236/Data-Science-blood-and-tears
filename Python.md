@@ -31,3 +31,13 @@ def another_method():
    # using logger defined above also works here
    logger.info('Inside method')
 ```
+
+* Use `imageio` to read image easier
+
+```python
+import matplotlib.pylab as plt
+from imageio import imread
+filename = <IMAGE_PATH>
+img = imread(filename)
+plt.imshow(img)
+```
