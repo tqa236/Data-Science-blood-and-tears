@@ -268,3 +268,5 @@ res <- sqlQuery(dbhandle, 'select * from information_schema.tables')
 24. Update Python syntax to a newer version
 
 Use [`flynt`](https://github.com/ikamensh/flynt) or [`pyupgrade`](https://github.com/asottile/pyupgrade)
+
+25. [Add new file types to Atom](https://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-language-recognition)
