@@ -99,3 +99,4 @@ ssh -N -L localhost:8000:localhost:8080 username@remoteHostIp
 
 * Use `--rm` flag for short commands and `-d` flag for long commands that we want to run in the background
 
+* Run a script inside a Docker container with `bash my_script.sh`, not `./my_script.sh`
