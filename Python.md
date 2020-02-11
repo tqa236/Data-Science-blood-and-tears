@@ -41,3 +41,9 @@ filename = <IMAGE_PATH>
 img = imread(filename)
 plt.imshow(img)
 ```
+
+* [Fix `pipenv` imcomptability error](https://stackoverflow.com/questions/51540404/how-to-resolve-python-package-depencencies-with-pipenv)
+
+```
+pipenv lock --pre --clear
+```
