@@ -100,3 +100,7 @@ ssh -N -L localhost:8000:localhost:8080 username@remoteHostIp
 * Use `--rm` flag for short commands and `-d` flag for long commands that we want to run in the background
 
 * Run a script inside a Docker container with `bash my_script.sh`, not `./my_script.sh`
+
+* [Run Python faster with Docker](https://medium.com/better-programming/faster-python-in-docker-d1a71a9b9917)
+
+Add `--security-opt seccomp=unconfined` flag when creating the container. Only for trusted code of course. Or in desperated situation.
