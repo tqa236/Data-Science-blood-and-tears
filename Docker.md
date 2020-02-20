@@ -104,3 +104,11 @@ ssh -N -L localhost:8000:localhost:8080 username@remoteHostIp
 * [Run Python faster with Docker](https://medium.com/better-programming/faster-python-in-docker-d1a71a9b9917)
 
 Add `--security-opt seccomp=unconfined` flag when creating the container. Only for trusted code of course. Or in desperated situation.
+
+First port: external port.
+
+* [Build again one service with `docker-compose`](https://stackoverflow.com/questions/35228970/docker-compose-build-single-container)
+
+```console
+docker-compose up -d --no-deps --build <service_name>
+```
