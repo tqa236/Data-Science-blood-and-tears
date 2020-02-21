@@ -270,3 +270,30 @@ res <- sqlQuery(dbhandle, 'select * from information_schema.tables')
 Use [`flynt`](https://github.com/ikamensh/flynt) or [`pyupgrade`](https://github.com/asottile/pyupgrade)
 
 25. [Add new file types to Atom](https://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-language-recognition)
+
+26. [Example of `tf.data.Dataset.from_generator`](https://stackoverflow.com/questions/52582275/tf-data-with-multiple-inputs-outputs-in-keras)
+
+Note: Add `.repeat()` to loop infinitely.
+
+```python
+def _input_fn():
+  sent1 = np.array([1, 2, 3, 4, 5, 6, 7, 8], dtype=np.int64)
+  sent2 = np.array([20, 25, 35, 40, 600, 30, 20, 30], dtype=np.int64)
+  sent1 = np.reshape(sent1, (8, 1, 1))
+  sent2 = np.reshape(sent2, (8, 1, 1))
+
+  labels = np.array([40, 30, 20, 10, 80, 70, 50, 60], dtype=np.int64)
+  labels = np.reshape(labels, (8, 1))
+
+  def generator():
+    for s1, s2, l in zip(sent1, sent2, labels):
+      yield {"input_1": s1, "input_2": s2}, l
+
+  dataset = tf.data.Dataset.from_generator(generator, output_types=({"input_1": tf.int64, "input_2": tf.int64}, tf.int64))
+  dataset = dataset.batch(2).repeat()
+  return dataset
+
+...
+
+model.fit(_input_fn(), epochs=10, steps_per_epoch=4)
+```
