@@ -5,3 +5,5 @@
 ```
 SELECT table_name FROM information_schema.tables WHERE table_schema='public'
 ```
+
+* When create the database with `docker-compose`, remember to delete the database if changing it.
