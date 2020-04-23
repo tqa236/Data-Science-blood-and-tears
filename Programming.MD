@@ -12,3 +12,5 @@ Tips and tricks
 # Unignore all dirs
 !*/
 ```
+
+* Use `re.DOTALL` to match a newline character.
