@@ -44,7 +44,6 @@ docker run -v d:/data:/data alpine ls /data
 ```
 docker exec -it container_name /bin/bash
 docker exec -it -u root container_name /bin/bash
-
 ```
 
 * Install ping in Docker
