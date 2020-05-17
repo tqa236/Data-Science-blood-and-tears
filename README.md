@@ -297,3 +297,7 @@ def _input_fn():
 
 model.fit(_input_fn(), epochs=10, steps_per_epoch=4)
 ```
+
+27. Download all files in a Jupyter Notebook server
+
+In a cell, run `!tar chvfz notebook.tar.gz *`
