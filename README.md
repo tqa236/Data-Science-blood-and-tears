@@ -301,3 +301,9 @@ model.fit(_input_fn(), epochs=10, steps_per_epoch=4)
 27. Download all files in a Jupyter Notebook server
 
 In a cell, run `!tar chvfz notebook.tar.gz *`
+
+28. [Save content of a web page to a file with the same name](https://stackoverflow.com/questions/13735051/how-to-capture-curl-output-to-a-file)
+
+```
+curl http://example.com/folder/big-file.iso -O
+```
