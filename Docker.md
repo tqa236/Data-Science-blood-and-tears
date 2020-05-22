@@ -113,3 +113,11 @@ docker-compose up -d --no-deps --build <service_name>
 ```
 
 * [Check the health of Docker containers with docker-bench](https://github.com/docker/docker-bench-security)
+
+* [Run Python code faster in Docker](https://medium.com/better-programming/faster-python-in-docker-d1a71a9b9917)
+
+(Security concern)
+
+```
+docker run -it --security-opt seccomp=unconfined 4oh4/pi
+```
