@@ -15,3 +15,9 @@ gcloud components update
 ```console
 gcloud auth login
 ```
+
+* [ssh port forwarding to a VM](https://stackoverflow.com/questions/27294267/ssh-port-forwarding-google-compute-engine)
+
+```console
+gcloud beta compute ssh --ssh-flag="-N" --ssh-flag="-L localhost:8888:localhost:8888" --zone [ZONE] [INSTANCE_NAME] --project [PROJECT_NAME]
+```
