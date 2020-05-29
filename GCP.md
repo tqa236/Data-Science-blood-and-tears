@@ -9,3 +9,9 @@
 ```console
 gcloud components update
 ```
+
+* Run before using gcloud with terminal
+
+```console
+gcloud auth login
+```
