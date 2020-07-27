@@ -21,3 +21,8 @@ gcloud auth login
 ```console
 gcloud beta compute ssh --ssh-flag="-N" --ssh-flag="-L localhost:8888:localhost:8888" --zone [ZONE] [INSTANCE_NAME] --project [PROJECT_NAME]
 ```
+* [copy a large number of files in parallel](https://cloud.google.com/storage/docs/gsutil/commands/cp)
+
+```console
+gsutil -m cp -r dir gs://my-bucket
+```
