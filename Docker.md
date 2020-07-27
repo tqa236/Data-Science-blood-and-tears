@@ -121,3 +121,7 @@ docker-compose up -d --no-deps --build <service_name>
 ```
 docker run -it --security-opt seccomp=unconfined 4oh4/pi
 ```
+
+* Detach a Docker container
+
+Ctrl + p then Ctrl + q, then we can safely quit the VM
