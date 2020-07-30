@@ -129,3 +129,17 @@ Ctrl + p then Ctrl + q, then we can safely quit the VM
 * Install Docker with Ubuntu dev branch
 
 [Must use an older repository](https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu) and then [continue like normal](https://docs.docker.com/engine/install/ubuntu/)
+
+* Run Jupyter notebook inside Docker: Use [tini][https://github.com/krallin/tini]
+
+In the Dockerfile
+
+```
+# Add Tini. Tini operates as a process subreaper for jupyter. This prevents kernel crashes.
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+RUN chmod +x /usr/bin/tini
+ENTRYPOINT ["/usr/bin/tini", "--"]
+
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+```
