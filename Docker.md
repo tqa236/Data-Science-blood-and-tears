@@ -125,3 +125,7 @@ docker run -it --security-opt seccomp=unconfined 4oh4/pi
 * Detach a Docker container
 
 Ctrl + p then Ctrl + q, then we can safely quit the VM
+
+* Install Docker with Ubuntu dev branch
+
+[Must use an older repository](https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu) and then [continue like normal](https://docs.docker.com/engine/install/ubuntu/)
