@@ -143,3 +143,25 @@ ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
 ```
+
+* [Configure credentials to use Docker Hub](https://dev.to/glsolaria/storing-dockerhub-credentials-using-pass-on-ubuntu-18-04-2k9o)
+
+Note: Might need to use `sudo` in various command, use `pass init` instead of `pass git init`, use `gpg2` instead of `gpg`
+
+```
+$ sudo apt install pass   # Install Pass
+$ gpg --full-generate-key # Create public-private key
+$ pass init <public key>
+
+$ mkdir ~/bin; cd ~/bin
+$ echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
+$ wget https://github.com/docker/docker-credential-helpers/releases/download/v0.6.3/docker-credential-pass-v0.6.3-amd64.tar.gz
+$ tar xvzf docker-credential-pass-v0.6.3-amd64.tar.gz
+$ chmod a+x docker-credential-pass
+$ mkdir ~/.docker
+$ echo '{ "credsStore": "pass" }' > ~/.docker/config.json
+$ pass insert docker-credential-helpers/docker-pass-initialized-check
+$ # Set the password to: pass is initialized
+$ docker login # Which will now store credentials in Pass
+$ docker pull ubuntu:18.04
+```
