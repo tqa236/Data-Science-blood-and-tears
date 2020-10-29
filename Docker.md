@@ -165,3 +165,9 @@ $ # Set the password to: pass is initialized
 $ docker login # Which will now store credentials in Pass
 $ docker pull ubuntu:18.04
 ```
+
+* Remove everything in Docker
+
+```
+docker system prune -a
+```
