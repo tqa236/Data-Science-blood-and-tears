@@ -33,12 +33,6 @@ docker rm $(docker ps -a -q)
 docker rmi -f $(docker images -q)
 ```
 
-* Combine all into one command:
-
-```
-alias clean_docker="docker kill $(docker ps -q);docker rm $(docker ps -a -q);docker rmi -f $(docker images -q)"
-```
-
 * Mount a host directory to a container (Windows)
 
 ```
