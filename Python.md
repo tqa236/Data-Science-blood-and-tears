@@ -47,3 +47,9 @@ plt.imshow(img)
 ```
 pipenv lock --pre --clear
 ```
+
+* Make isort compatible with Black
+
+```
+isort --profile=black .
+```
