@@ -1,6 +1,6 @@
 # Python tips and tricks
 
-* [Log to multiple files](https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings)
+1. [Log to multiple files](https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings)
 
 ```python
 import logging
@@ -32,7 +32,7 @@ def another_method():
    logger.info('Inside method')
 ```
 
-* Use `imageio` to read image easier
+2. Use `imageio` to read image easier
 
 ```python
 import matplotlib.pylab as plt
@@ -42,14 +42,16 @@ img = imread(filename)
 plt.imshow(img)
 ```
 
-* [Fix `pipenv` imcomptability error](https://stackoverflow.com/questions/51540404/how-to-resolve-python-package-depencencies-with-pipenv)
+3. [Fix `pipenv` imcomptability error](https://stackoverflow.com/questions/51540404/how-to-resolve-python-package-depencencies-with-pipenv)
 
 ```
 pipenv lock --pre --clear
 ```
 
-* Make isort compatible with Black
+4. Make isort compatible with Black
 
 ```
 isort --profile=black .
 ```
+
+5. Use `vars` to access class's variable 
