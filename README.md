@@ -307,3 +307,7 @@ In a cell, run `!tar chvfz notebook.tar.gz *`
 ```
 curl http://example.com/folder/big-file.iso -O
 ```
+
+29. Choose ARMA parameters from ACF and PACF
+
+![Choose ARMA parameters from ACF and PACF](image/ARMA_ACF_PACF.png)
