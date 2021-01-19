@@ -55,3 +55,18 @@ isort --profile=black .
 ```
 
 5. Use `vars` to access class's variable 
+
+6. Some useful commands to debug `pipenv`
+
+[✘ Locking Failed!](https://stackoverflow.com/questions/51540404/how-to-resolve-python-package-depencencies-with-pipenv)
+
+```
+pipenv lock --pre --clear
+```
+
+[Your Pipfile requires python_version 3.9, but you are using 3.8.3](https://github.com/pypa/pipenv/issues/2482)
+
+```
+which python
+pipenv install --python=/path/to/your/python
+```
