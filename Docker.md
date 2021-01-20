@@ -171,3 +171,7 @@ $ docker pull ubuntu:18.04
 ```
 docker system prune -a
 ```
+
+* [Change default directory for Docker images](https://stackoverflow.com/questions/24309526/how-to-change-the-docker-image-installation-directory)
+
+Change the value of the `data-root` parameter in `/etc/docker/daemon.json` (according to https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file).
