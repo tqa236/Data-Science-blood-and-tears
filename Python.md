@@ -70,3 +70,9 @@ pipenv lock --pre --clear
 which python
 pipenv install --python=/path/to/your/python
 ```
+
+7. Serve static website locally
+
+```
+python -m http.server 8000
+```
