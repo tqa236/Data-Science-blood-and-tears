@@ -311,3 +311,7 @@ curl http://example.com/folder/big-file.iso -O
 29. Choose ARMA parameters from ACF and PACF
 
 ![Choose ARMA parameters from ACF and PACF](image/ARMA_ACF_PACF.png)
+
+30. Use the correct `alternative` option in Fisher Exact test
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html
