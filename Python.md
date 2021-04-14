@@ -79,7 +79,7 @@ python -m http.server 8000
 
 8. Download files on Google Colab
 
-```
+```python
 from google.colab import files
 files.download("model.h5")
 ```
