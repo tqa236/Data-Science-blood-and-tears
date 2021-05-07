@@ -33,6 +33,18 @@ docker rm $(docker ps -a -q)
 docker rmi -f $(docker images -q)
 ```
 
+* Delete all volumes 
+
+```
+docker volume prune
+```
+
+* Full system prune
+
+```
+docker system prune -a
+```
+
 * Mount a host directory to a container (Windows)
 
 ```
