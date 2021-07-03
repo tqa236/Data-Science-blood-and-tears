@@ -83,3 +83,11 @@ python -m http.server 8000
 from google.colab import files
 files.download("model.h5")
 ```
+
+9. It's possible to install third party extensions directly from Jupyter Lab now
+
+10. Jupyterlab Code Formatter Error Unable to find server plugin version (Ref: https://github.com/ryantam626/jupyterlab_code_formatter/issues/193)
+
+```
+jupyter server extension enable --py jupyterlab_code_formatter
+```
