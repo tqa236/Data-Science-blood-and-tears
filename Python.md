@@ -91,3 +91,9 @@ files.download("model.h5")
 ```
 jupyter server extension enable --py jupyterlab_code_formatter
 ```
+
+11. Change Kernel name (Ref: https://queirozf.com/entries/jupyter-kernels-how-to-add-change-remove)
+
+1) Use $ jupyter kernelspec list to see the folder the kernel is located in
+
+2) In that folder, open up file kernel.json and edit option "display_name"
