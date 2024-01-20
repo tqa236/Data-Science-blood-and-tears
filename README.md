@@ -315,3 +315,7 @@ curl http://example.com/folder/big-file.iso -O
 30. Use the correct `alternative` option in Fisher Exact test
 
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html
+
+31. Scientific Python project template
+
+https://github.com/scientific-python/cookie
